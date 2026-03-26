@@ -50,45 +50,67 @@ Prerequisites
 - Git (optional, if cloning)
 
 1. Clone the repository (or download ZIP)
+	```bash
 	git clone https://github.com/AyushMohaptra/Smart_PII_scrubber.git
 	cd Smart_PII_scrubber
+	```
 
 2. Create and activate a virtual environment
 
+	Run only one block below for your OS.
+
 	Windows (PowerShell)
+	```powershell
 	py -3.12 -m venv .venv312
 	.\.venv312\Scripts\Activate.ps1
+	```
 
 	Windows (CMD)
+	```bat
 	py -3.12 -m venv .venv312
 	.venv312\Scripts\activate.bat
+	```
 
 	macOS/Linux
+	```bash
 	python3.12 -m venv .venv312
 	source .venv312/bin/activate
+	```
 
 3. Upgrade pip and install dependencies
+	```bash
 	python -m pip install --upgrade pip
 	python -m pip install -r requirements.txt
+	```
 
 4. Install the spaCy English model
+	```bash
 	python -m spacy download en_core_web_sm
+	```
 
 5. Verify installation
+	```bash
 	python -c "import streamlit, spacy; print('OK')"
+	```
 
 6. Run the Streamlit application
+	```bash
 	python -m streamlit run app/gui_app.py
+	```
 
 7. Open in browser
 	http://localhost:8501
 
 8. (Optional) Run CLI workflow
 	Edit input path in [app/process_my_file.py](app/process_my_file.py), then run:
+	```bash
 	python -m app.process_my_file
+	```
 
 9. Deactivate environment when done
+	```bash
 	deactivate
+	```
 
 Quick Start (Windows)
 1. Create virtual environment
