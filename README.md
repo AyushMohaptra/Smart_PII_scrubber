@@ -43,7 +43,7 @@ Project Structure
 - [output](output): generated outputs (git-kept as empty placeholder)
 - [requirements.txt](requirements.txt): Python dependencies
 
-Detailed Installation (No Docker)
+Detailed Installation
 Prerequisites
 - Python 3.12 installed and available in PATH
 - pip (bundled with Python)
