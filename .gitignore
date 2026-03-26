@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.venv312/
+venv/
+
+# Editor/OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# App runtime/generated artifacts
+output/*
+!output/.gitkeep
+
+data/*
+!data/.gitkeep
+
+# Logs and local state
+*.log
+*.sqlite
+*.db
+*.db-journal
+
+# Build/distribution
+build/
+dist/
+*.egg-info/
