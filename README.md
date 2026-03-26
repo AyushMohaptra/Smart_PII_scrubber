@@ -1,7 +1,17 @@
-Smart PII Scrubber
+# Smart PII Scrubber
 
 Smart PII Scrubber is a local-first PII detection and redaction tool built with Python and Streamlit.
 It can process text directly or uploaded files and generate redacted output with metadata and audit logs.
+
+This project is useful for privacy-safe document handling, data anonymization workflows, and compliance-focused preprocessing (for example GDPR/HIPAA-style redaction pipelines).
+
+Keywords
+- pii redaction
+- data anonymization
+- streamlit app
+- document privacy
+- nlp entity detection
+- gdpr hipaa compliance support
 
 Features
 - Interactive Streamlit UI for text and file workflows
@@ -10,6 +20,11 @@ Features
 - Same-format export support for PDF and DOCX redaction outputs
 - Audit metadata generation for traceability
 - Adaptive learner data store for contextual improvements
+
+Typical Use Cases
+- Redacting resumes before sharing publicly
+- Masking sensitive fields in legal and financial documents
+- Preparing datasets for demos, testing, or model training without exposing personal data
 
 Supported Input Formats
 - txt
