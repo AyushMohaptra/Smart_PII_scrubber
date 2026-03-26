@@ -58,27 +58,7 @@ Generated files are written to [output](output), typically including:
 - _audit.json
 - _redacted.pdf or _redacted.docx (when same-format export is available)
 
-Privacy and Public Repo Safety
-- Runtime artifacts in [output](output) are ignored by git (except .gitkeep)
-- Runtime data in [data](data) is ignored by git (except .gitkeep)
-- Local virtual environments are ignored by git
-- Avoid committing real customer documents, sample personal records, or local absolute paths
-
-GitHub Push Checklist
-1. Confirm no sensitive files are staged
-	git status
-2. Initialize repo (if needed)
-	git init
-3. Add and commit
-	git add .
-	git commit -m "Initial public-safe commit"
-4. Add remote and push
-	git remote add origin <your-repo-url>
-	git branch -M main
-	git push -u origin main
-
 Troubleshooting
-- If Streamlit command is not found, run through the venv Python executable shown above.
 - If spaCy/Presidio warnings appear, confirm Python 3.12 is being used.
 - If port 8501 is busy, stop previous process or run with a different port.
 
